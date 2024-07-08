@@ -1,10 +1,11 @@
 
 body {
-    background-image: url("../../images/background-image-main.png");
-    background-repeat: repeat-y; /* Repetir verticalmente */
-    background-size: cover; /* Hace que la imagen de fondo cubra todo el cuerpo */
-    background-position: center; /* Centra la imagen de fondo */
-    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    /* background-image: url("../../images/background-image-main.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;  */
+    background-color: gray;
 }
 .nav_container {
     padding: 20px; /* Espaciado interno */
@@ -70,7 +71,7 @@ body {
     grid-template-columns: auto 1fr auto; /* Un espacio para el logo, otro para los enlaces y otro para el botón */
     align-items: center;
 }
-
+/*Hero Section*/
 .hero-btn {
     background-color: #0734d8; /* Color de fondo del botón */
     margin-left: auto; /* Mueve el botón a la izquierda */
@@ -86,7 +87,12 @@ body {
 }
 
 .hero-content{
-    width: 90%;
+    background-image: url("../../images/background-image-main.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center; 
+    
+    width: 100%;
     margin-bottom: 300px;
     text-align: right;
     color: #fefeff;
@@ -99,7 +105,7 @@ body {
         margin-bottom: 30px;
     }
 }
-
+/*End of Hero section*/
 .container_intro {
     display: flex;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una fila */
