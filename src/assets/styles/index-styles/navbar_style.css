@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("../images/background-image-main.png");
+    background-image: url("../../images/background-image-main.png");
     background-repeat: repeat-y; /* Repetir verticalmente */
     background-size: cover; /* Hace que la imagen de fondo cubra todo el cuerpo */
     background-position: center; /* Centra la imagen de fondo */
