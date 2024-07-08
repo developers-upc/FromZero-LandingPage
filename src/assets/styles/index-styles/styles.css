@@ -9,6 +9,10 @@ button {
 }
 
 /*FAQ Section*/
+#faq{
+    
+    height: auto;
+}
 .faqImg {
     padding: 20px;
     max-height: 40rem;
@@ -44,8 +48,8 @@ button {
 }
 
 #a1,
-#a2,
-#a3 {
+#answer2,
+#answer3 {
     color: #4f4e4e;
 }
 
@@ -98,8 +102,8 @@ button {
     }
 
     #a1,
-    #a2,
-    #a3 p {
+    #answer2,
+    #answer3 p {
         font-size: 25px;
     }
 

@@ -1,4 +1,4 @@
-
+/*global*/
 body {
     /* background-image: url("../../images/background-image-main.png");
     background-repeat: repeat-y;
@@ -7,12 +7,31 @@ body {
     background-attachment: fixed;  */
     background-color: gray;
 }
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(92, 92, 92);
+}
+
+main{
+    margin-top: 130px;
+}
+section{
+    height: 600px;
+    margin-bottom: 60px;
+}
+/*End of global*/
+
 .nav_container {
-    padding: 20px; /* Espaciado interno */
+     /* Espaciado interno */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .nav-logo img {
@@ -72,6 +91,16 @@ body {
     align-items: center;
 }
 /*Hero Section*/
+#hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../images/background-image-main.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center; 
+}
+
 .hero-btn {
     background-color: #0734d8; /* Color de fondo del botón */
     margin-left: auto; /* Mueve el botón a la izquierda */
@@ -87,13 +116,9 @@ body {
 }
 
 .hero-content{
-    background-image: url("../../images/background-image-main.png");
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center; 
     
-    width: 100%;
-    margin-bottom: 300px;
+    /* margin: 140px; */
+    width: 80%;
     text-align: right;
     color: #fefeff;
     h1{
@@ -106,14 +131,22 @@ body {
     }
 }
 /*End of Hero section*/
+
+/*Introduction section*/
+#main-introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container_intro {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una fila */
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro_up {
     width: 80%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
     color: #fefeff;
     
@@ -121,23 +154,22 @@ body {
 
 
 .intro_middle {
-    margin: 0 auto;
+    width: 80%;
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: row; /* Default: Horizontal layout */
-    justify-content: center; /* Horizontally center the divs */
+    justify-content: space-around; /* Horizontally center the divs */
     align-items: center; /* Vertically center the divs */
-    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
     color: #fefeff;
-    margin-bottom: 200px;
 }
   
-.parte-izquierda img {
+/* .parte-izquierda img {
     width: 300px;
 }
 
 .parte-derecha {
     min-width: 40%;
-}
+} */
 
 @media screen and (max-width: 600px) {
     .intro_middle {
@@ -152,24 +184,30 @@ body {
 
 .intro_under {
     width: 80%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center; /* Alinea el texto al centro */
     & h1{
         font-size: 30px;
-        margin-bottom: 20px;
+        
         color: #fefeff
     }
     & p {
         color: #fefeff
     }
 }
+/*End of Introduction section*/
+
+/*Demosntration section*/
+#demonstration{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .container-demonstration h2{
-    width: 80%;
     color: #fefeff;
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
     font-size: 25px;
 }
 
@@ -180,14 +218,26 @@ body {
     flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
-.first-row-demonstration img {
-    width: 70%; /* Set initial width of each image */
-    max-width: 400px; /* Set maximum width for responsiveness */
-    margin: 10px; /* Add some spacing between images */
+/* .first-row-demonstration img {
+    width: 70%;
+    max-width: 400px;
+    margin: 10px; 
+} */
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img{
+    width: 70%;
+    max-width: 400px;
+    margin: 10px;
 }
 
 .container-demonstration{
-    margin-bottom: 80px;
+    width: 80%;
 }
   
 @media screen and (max-width: 600px) {
@@ -195,3 +245,5 @@ body {
     width: 90%; /* Reduce width for smaller screens */
 }
 }
+
+/*End of Demonstration section*/
