@@ -1,10 +1,5 @@
 /*global*/
 body {
-    /* background-image: url("../../images/background-image-main.png");
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center; 
-    background-attachment: fixed;  */
     background-color: gray;
 }
 
@@ -14,28 +9,31 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: rgb(92, 92, 92);
+    /* background-color: rgb(92, 92, 92); */
+    backdrop-filter: blur(10px);
+    /* border: solid 1px black; */
 }
 
-main{
+/* main{
     margin-top: 130px;
-}
+} */
 section{
     height: 600px;
     margin-bottom: 60px;
 }
 /*End of global*/
 
+/*Nav section*/
 .nav_container {
-     /* Espaciado interno */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    /* margin-bottom: 50px; */
 }
 
 .nav-logo img {
-    width: 80px; /* Tamaño del logo */
+    width: 180px; /* Tamaño del logo */
+    height: auto;
+    filter: drop-shadow(0 5px 4px black);
 }
 
 .nav-links {
@@ -90,8 +88,12 @@ section{
     grid-template-columns: auto 1fr auto; /* Un espacio para el logo, otro para los enlaces y otro para el botón */
     align-items: center;
 }
+
+/*End of Nav section*/
+
 /*Hero Section*/
 #hero-section{
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,3 +249,116 @@ section{
 }
 
 /*End of Demonstration section*/
+
+/*FAQ*/
+button {
+    cursor: pointer;
+}
+
+/*FAQ Section*/
+#faq{
+    
+    height: auto;
+}
+.faqImg {
+    padding: 20px;
+    max-height: 40rem;
+    width: 100%;
+}
+
+.container-faq {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: justify;
+    align-items: center;
+    border-radius: 12px;
+    background: #D9D9D9;
+}
+
+.box button {
+    border-radius: 20px;
+    padding: 1px 30px;
+    font-size: 30px;
+}
+
+.box-content {
+    margin: 10px;
+    padding: 10px;
+}
+
+#a1,
+#answer2,
+#answer3 {
+    color: #4f4e4e;
+}
+
+.support {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    margin-left: 140px;
+    margin-right: 140px;
+    align-items: center;
+}
+
+.support button {
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/*End of FAQ-aboutUs*/
+@media (max-width:1560px) {
+    .box {
+        display: block;
+        text-align: center;
+    }
+
+    #a2,
+    #a3 {
+        display: block;
+        text-align: center;
+    }
+
+    #a2,
+    #a3 ul {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media (max-width:800px) {
+    .container-faq {
+        display: block;
+        text-align: center;
+
+    }
+
+    #a1,
+    #answer2,
+    #answer3 p {
+        font-size: 25px;
+    }
+
+    .support{
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    margin-right: 0;
+    }
+
+}
